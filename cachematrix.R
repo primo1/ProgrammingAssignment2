@@ -53,10 +53,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         
-        ## Return a matrix that is the inverse of 'x'
-        ## Example: a <- makeCacheMatrix(rbind(c(1, -1/4), c(-1/4, 1)))
-        
-          m <- x$getsolve()
+        m <- x$getsolve()
         if(!is.null(m)) {
                  message("getting cached data")
                  return(m)
